@@ -1,0 +1,5 @@
+# ignore model 
+./Api/trained_model/
+./Api/images/
+./assets/images/
+./libraries/
