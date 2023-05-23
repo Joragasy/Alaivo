@@ -1,7 +1,6 @@
-# ignore model 
-./Api/trained_model/
-./Api/images/
-./assets/images/
-./libraries/
-pat.conf
+Api/trained_model/
+Api/images/
+assets/images/
+libraries/
+*.conf
 
