@@ -1,0 +1,34 @@
+{
+    "name": "Alaivo",
+    "version": "1.0",
+    "description": "crop a part of images with a few clicks",
+    "background": {
+        "scripts": [
+            "backend.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["manager.js","./behaviours/utils.js", "./behaviours/segmentation.js", "./behaviours/capture.js"], 
+            "css": ["./assets/css/styles.css"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "./assets/images/camera16.png",
+        "default_title": "Take a screen shot!",
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "./assets/images/camera16.png",
+        "32": "./assets/images/camera32.png",
+        "64": "./assets/images/camera64.png",
+        "128": "./assets/images/camera128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "<all_urls>"
+    ],
+    "manifest_version": 2
+}

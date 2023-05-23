@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Alaivo</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+</head>
+<body>
+  <div class="container" width="1000" height="1000">
+    <div class="header">
+      <h1>Alaivo</h1>
+    </div>
+    <div >
+      <canvas id="captured_images" class="captured_images" style="cursor:crosshair;" width="720" height="400" ></canvas>
+      <!-- <canvas id="prompt_mark" class = "prompt_mark" width="720" height="400" style="position:absolute;"></canvas>
+      <canvas id="mask" class = "mask" width="720" height="400" style="position:absolute;"></canvas> -->
+    </div>
+    </canvas>
+    
+    <div id="input-container" class="input-container">
+        <button id="capture" value="Capture">Capture </button>
+        <button id="removeprompt" value="remove">Remove Prompt </button>
+        <button id="download">Download</button>
+        <button id="extract">Alaivo</button>
+    </div>
+    <textarea id="messages" name="messages" rows="2" cols="100">Messages</textarea><br/>
+  </div>
+
+<script src="manager.js"></script>
+<script src="./behaviours/utils.js"></script>
+<script src="./behaviours/segmentation.js"></script>
+<script src="./behaviours/capture.js"></script>
+</body>
+</html>
